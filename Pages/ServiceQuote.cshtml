@@ -1,0 +1,27 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Service Quote";
+}
+<h1>@ViewData["Title"]</h1>
+
+<br />
+<p>Are you interested in renting Lilian's Fortnite-teaching services? Get a quote below:</p>
+
+<form>
+    <label for="hoursInput">Enter hours needed:</label>
+    <input type="number" id="hoursInput" placeholder="Enter hours">
+    <label for="hourlyRate"> x Lilian's current rate:</label>
+    <input type="text" id="hourlyRate" value="20"" readonly>
+
+    <br>
+    <br>
+    <button id="calculateButton" type="button">Calculate Total</button>
+
+    <br>
+    <br>
+    <div id="totalOutput"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/calculator.js"></script>
+</form>
